@@ -63,7 +63,7 @@ php -f bin/magento setup:install \
   --use-secure=0 \
   --use-rewrites=1 \
   --use-secure-admin=0 \
-  --session-save=files"
+  --session-save=files
 
 #change directory back to where user ran script
 cd -
