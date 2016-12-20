@@ -45,27 +45,25 @@ echo "[+] Uninstalling..."
 php -f bin/magento setup:uninstall -n
 
 echo "[+] Installing..."
-install_cmd="./bin/magento setup:install \
+php -f bin/magento setup:install \
   --db-host='localhost' \
-  --db-name='mage2' \
+  --db-name='magento2' \
   --db-user='root' \
   --db-password='mage2' \
   --backend-frontname=admin \
-  --base-url='http://mage2.dev/' \
+  --base-url='http://dev.magento2.local/' \
   --language=en_US \
   --currency='USD' \
   --timezone=America/Los_Angeles \
-  --admin-lastname='mage2' \
-  --admin-firstname='mage2' \
-  --admin-email='foo@test.com' \
+  --admin-lastname='Admin' \
+  --admin-firstname='Magento' \
+  --admin-email='yourname@domain.com' \
   --admin-user='admin' \
-  --admin-password='password123' \
+  --admin-password='GentFlow123!' \
   --use-secure=0 \
   --use-rewrites=1 \
   --use-secure-admin=0 \
   --session-save=files"
-
-eval ${install_cmd}
 
 #change directory back to where user ran script
 cd -
