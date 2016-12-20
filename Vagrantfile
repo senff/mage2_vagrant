@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
   config.vm.box_url = "https://s3.amazonaws.com/magenation/debian-wheezy.box"
 
   config.ssh.username = "vagrant"
-  config.vm.hostname = "mage2.dev"
+  config.vm.hostname = "dev.magento2.local"
   config.ssh.forward_agent = "true"
 
   # Create a private network, which allows host-only access to the machine
